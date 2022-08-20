@@ -1,96 +1,1744 @@
----
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
----
+<div class="relative w-full bg-white">
+	<!-- Header Start -->
+	<!-- navBar Start -->
+	<header>
+		<nav class="fixed w-full bg-white z-[100]">
+			<div class="container m-auto px-6 md:px-12 lg:px-6">
+				<div
+					class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0"
+				>
+					<div class="w-full flex justify-between lg:w-auto">
+						<!-- <a href="#" aria-label="logo">
+                <img src="https://tailus.io/sources/blocks/tech-startup/preview/logo.svg" class="w-36" alt="tailus logo" width="144" height="48">
+              </a> -->
+						<a href="#" aria-label="logo" class="flex space-x-2 items-center">
+							<div aria-hidden="true" class="flex space-x-1">
+								<div class="h-4 w-4 rounded-full bg-gray-900"></div>
+								<div class="h-6 w-2 bg-cyan-500"></div>
+							</div>
+							<span class="text-2xl font-bold text-gray-900">Arceelus</span>
+						</a>
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			Check out the <code>src/pages</code> directory to get started.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Chat"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+						<button
+							aria-label="humburger"
+							id="hamburger"
+							class="relative w-10 h-10 -mr-2 lg:hidden"
+						>
+							<div
+								aria-hidden="true"
+								id="line"
+								class="inset-0 w-6 h-0.5 m-auto rounded bg-gray-500 transtion duration-300"
+							>
+							</div>
+							<div
+								aria-hidden="true"
+								id="line2"
+								class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-gray-500 transtion duration-300"
+							>
+							</div>
+						</button>
+					</div>
 
-<style>
-	:root {
-		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
+					<div
+						hidden
+						class="w-full bg-white md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-auto lg:flex"
+					>
+						<div class="block w-full lg:items-center lg:flex">
+							<ul
+								class="space-y-6 pb-6 tracking-wide font-medium text-gray-600 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0"
+							>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Product</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Use Cases</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Integrations</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Pricing</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="block md:px-3">
+										<span>Blog</span>
+									</a>
+								</li>
+							</ul>
 
-	h1 {
-		margin: 2rem 0;
-	}
+							<ul
+								class="border-t space-y-2 pt-2 lg:space-y-0 lg:space-x-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border-l lg:items-center lg:flex"
+							>
+								<li>
+									<button
+										type="button"
+										title="Start buying"
+										class="w-full py-3 px-6 rounded-md text-center transition active:bg-sky-200 focus:bg-sky-100 sm:w-max"
+									>
+										<span class="block text-cyan-600 font-semibold">
+											Sign in
+										</span>
+									</button>
+								</li>
 
-	main {
-		margin: auto;
-		padding: 1em;
-		max-width: 60ch;
-	}
+								<li>
+									<button
+										type="button"
+										title="Start buying"
+										class="w-full py-3 px-6 rounded-md text-center transition bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 focus:bg-sky-600 sm:w-max"
+									>
+										<span class="block text-white font-semibold">
+											Try it for free
+										</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- navBar End -->
 
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
+	<div class="pt-32 pb-20 md:pt-40">
+		<div class="container m-auto px-6 md:px-12 lg:px-16">
+			<div class="lg:flex lg:items-center lg:gap-x-16">
+				<div class="space-y-8 lg:w-7/12">
+					<h1 class="font-bold text-gray-900 text-4xl md:text-5xl">
+						Run successful remote and hybrid teams
+					</h1>
+					<p class="text-gray-600 lg:w-11/12">
+						DailyBot takes chat and collaboration to the next level: daily
+						standups, team check-ins, surveys, kudos, best companion bot for
+						your virtual watercooler, 1:1 intros, motivation tracking and more.
+					</p>
 
-	@keyframes pulse {
-		0%,
-		100% {
-			background-position-y: 0%;
-		}
-		50% {
-			background-position-y: 80%;
-		}
-	}
+					<span class="block font-semibold"
+						>The best companion bot for your chat app.
+					</span>
 
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		background: #4f39fa;
-		padding: 1rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
-	}
+					<div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex">
+						<a
+							aria-label="add to slack"
+							href="#"
+							class="p-4 border border-gray-200 rounded-md hover:border-cyan-400 hover:shadow-lg"
+						>
+							<div class="flex justify-center space-x-4">
+								<img
+									class="w-6"
+									src="https://tailus.io/sources/blocks/tech-startup/preview/images/slack.png"
+									alt="slack logo"
+									loading="lazy"
+									width="128"
+									height="128"
+								/>
+								<span class="hidden font-medium md:block">Add to Slack</span>
+							</div>
+						</a>
+						<a
+							aria-label="add to chat"
+							href="#"
+							class="p-4 border border-gray-200 rounded-md hover:border-green-400 hover:shadow-lg"
+						>
+							<div class="flex justify-center space-x-4">
+								<img
+									class="w-6"
+									src="https://tailus.io/sources/blocks/tech-startup/preview/images/chat.png"
+									alt="chat logo"
+									loading="lazy"
+									width="128"
+									height="128"
+								/>
+								<span class="hidden font-medium md:block"
+									>Add to Google Chat
+								</span>
+							</div>
+						</a>
+						<a
+							aria-label="add to zoom"
+							href="#"
+							class="p-4 border border-gray-200 rounded-md hover:border-blue-400 hover:shadow-lg"
+						>
+							<div class="flex justify-center space-x-4">
+								<img
+									class="w-6"
+									src="https://tailus.io/sources/blocks/tech-startup/preview/images/zoom.png"
+									alt="chat logo"
+									loading="lazy"
+									width="128"
+									height="128"
+								/>
+								<span class="hidden font-medium md:block">Add to Zoom</span>
+							</div>
+						</a>
+					</div>
 
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
+					<div>
+						🔥🌟
+						<span>Other integrations :</span>
+						<a href="#" class="font-semibold text-gray-700">Discord,</a>
+						<a href="#" class="font-semibold text-gray-700">Telegram</a>
+					</div>
+				</div>
 
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+				<div hidden class="lg:block lg:w-5/12">
+					<img
+						src="https://tailus.io/sources/blocks/tech-startup/preview/images/watch.svg"
+						class="w-full"
+						alt="wath illustration"
+						loading="lazy"
+						width="320"
+						height="280"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header End -->
+
+	<!-- Logo Cloud Start  -->
+
+	<div class="pb-8 mb-12">
+		<div class="container m-auto px-6 md:px-12 lg:px-6">
+			<div class="py-8 px-12 bg-cyan-50 rounded-2xl">
+				<span class="block text-center font-medium text-cyan-700"
+					>Trusted by your favorite giants
+				</span>
+				<div
+					class="mt-8 flex justify-center flex-wrap items-center gap-4 md:gap-6 lg:gap-8"
+				>
+					<div class="flex items-center">
+						<img
+							class="w-36"
+							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/microsoft.png"
+							alt="client logo"
+							loading="lazy"
+							width="584"
+							height="122"
+						/>
+					</div>
+					<div class="flex items-center">
+						<img
+							class="w-28"
+							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/myob.png"
+							alt="client logo"
+							loading="lazy"
+							width="400"
+							height="219"
+						/>
+					</div>
+					<div class="flex items-center">
+						<img
+							class="w-28"
+							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/grabyo.png"
+							alt="client logo"
+							loading="lazy"
+							width="400"
+							height="219"
+						/>
+					</div>
+					<div class="flex items-center">
+						<img
+							class="w-32"
+							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/lifegroups.png"
+							alt="client logo"
+							loading="lazy"
+							width="400"
+							height="219"
+						/>
+					</div>
+					<div class="flex items-center">
+						<img
+							class="w-24"
+							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/lilly.png"
+							alt="client logo"
+							loading="lazy"
+							width="400"
+							height="219"
+						/>
+					</div>
+					<div class="flex items-center">
+						<img
+							class="w-28"
+							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/grabyo.png"
+							alt="client logo"
+							loading="lazy"
+							width="400"
+							height="219"
+						/>
+					</div>
+					<div class="flex items-center">
+						<img
+							class="w-32"
+							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/lifegroups.png"
+							alt="client logo"
+							loading="lazy"
+							width="400"
+							height="219"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Logo Cloud End  -->
+
+	<!-- Intro Start -->
+	<div class="py-16 bg-gradient-to-br from-cyan-50 to-green-100">
+		<div class="container m-auto px-6 text-gray-500 md:px-8">
+			<div class="grid lg:grid-cols-7 gap-6">
+				<div class="lg:col-span-3">
+					<div
+						class="bg-white rounded-xl shadow-lg px-8 space-y-4 py-12 sm:px-12 lg:px-8"
+					>
+						<img
+							src="https://tailus.io/sources/blocks/mansory/preview/images/service.webp"
+							alt="illustration"
+							loading="lazy"
+							width="900"
+							height="600"
+						/>
+						<h3 class="text-2xl font-semibold text-cyan-900">
+							Web development
+						</h3>
+						<p class="mb-6">
+							Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+							cum, consectetur ullam tempora ipsa iste officia sed officiis!
+							Incidunt ea animi officiis.
+						</p>
+						<a href="#" class="block font-medium text-blue-600">Know more</a>
+					</div>
+				</div>
+				<div class="lg:col-span-2">
+					<div
+						class="h-full flex flex-col justify-between bg-white rounded-xl shadow-lg px-8 py-12 sm:px-12 lg:px-8"
+					>
+						<div class="space-y-4 mb-6">
+							<img
+								src="https://tailus.io/sources/blocks/mansory/preview/images/service2.webp"
+								alt="illustration"
+								loading="lazy"
+								width="616"
+								height="400"
+							/>
+							<h3 class="text-2xl font-semibold text-cyan-900">
+								Web development mentoring.
+							</h3>
+							<p>
+								Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+								cum, consectetur ullam tempora ipsa iste officia sed officiis!
+								Incidunt ea animi officiis.
+							</p>
+						</div>
+						<a href="#" class="block font-medium text-blue-600">Know more</a>
+					</div>
+				</div>
+				<div class="lg:col-span-2">
+					<div
+						class="h-full flex flex-col justify-between bg-white rounded-xl shadow-lg px-8 py-12 sm:px-12 lg:px-8"
+					>
+						<div class="space-y-4 mb-6">
+							<img
+								src="https://tailus.io/sources/blocks/mansory/preview/images/service3.webp"
+								alt="illustration"
+								loading="lazy"
+								width="675"
+								height="450"
+							/>
+							<h3 class="text-2xl font-semibold text-cyan-900">
+								Web development training
+							</h3>
+							<p>
+								Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+								cum, consectetur ullam tempora ipsa iste officia sed officiis!
+								Incidunt ea animi officiis.
+							</p>
+						</div>
+						<a href="#" class="block font-medium text-blue-600">Know more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Intro End -->
+
+	<!-- context more start  -->
+
+	<!-- context more end  -->
+
+	<!-- content start -->
+	<!-- 
+    <div class="py-16 bg-white ">
+      <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+          <div class="space-y-6 md:7/12 lg:w-6/12">
+            <h2 class="text-2xl text-gray-900 font-bold md:text-5xl">Nuxt development is carried out by passionate
+              developers.</h2>
+            <div class="space-y-4">
+              <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
+                accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat
+                expedita consequatur! Officiis id consequatur atque doloremque!</p>
+              <p class="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita
+                at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+            </div>
+            <a href="#"
+              class="block w-full py-3 px-6 text-center rounded-full transition bg-cyan-500  hover:bg-cyan-600  active:bg-cyan-300 focus:bg-cyan-100 sm:w-max">
+              <span class="block text-white font-semibold text-sm">
+                Learn More
+              </span>
+            </a>
+          </div>
+          <div class="md:5/12 lg:w-6/12">
+            <img src="https://tailus.io/sources/blocks/right-image/preview/images/boost.png" alt="image" loading="lazy"
+              width="" height="">
+          </div>
+        </div>
+      </div>
+    </div> -->
+	<!-- content end  -->
+
+	<!-- Services Start -->
+	<!-- Service More Start   -->
+	<div class="bg-white py-6 sm:py-8 lg:py-12">
+		<div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+			<!-- text - start -->
+			<div class="mb-10 md:mb-16">
+				<h2
+					class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
+				>
+					Our competitive advantage
+				</h2>
+
+				<p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
+					This is a section of some simple filler text, also known as
+					placeholder text. It shares some characteristics of a real written
+					text but is random or otherwise generated.
+				</p>
+			</div>
+			<!-- text - end -->
+
+			<div
+				class="grid mx-20 sm:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 xl:gap-16"
+			>
+				<!-- feature - start -->
+				<div class="flex gap-4 md:gap-6">
+					<div
+						class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-teal-500 text-white rounded-lg md:rounded-xl shadow-lg"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-6 h-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+						</svg>
+					</div>
+
+					<div>
+						<h3 class="text-lg md:text-xl font-semibold mb-2">Growth</h3>
+						<p class="text-gray-500 mb-2">
+							Filler text is dummy text which has no meaning however looks very
+							similar to real text.
+						</p>
+						<a
+							href="#"
+							class="text-teal-500 hover:text-teal-600 active:text-teal-700 font-bold transition duration-100"
+							>More
+						</a>
+					</div>
+				</div>
+				<!-- feature - end -->
+
+				<!-- feature - start -->
+				<div class="flex gap-4 md:gap-6">
+					<div
+						class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-teal-500 text-white rounded-lg md:rounded-xl shadow-lg"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-6 h-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+							></path>
+						</svg>
+					</div>
+
+					<div>
+						<h3 class="text-lg md:text-xl font-semibold mb-2">Security</h3>
+						<p class="text-gray-500 mb-2">
+							Filler text is dummy text which has no meaning however looks very
+							similar to real text.
+						</p>
+						<a
+							href="#"
+							class="text-teal-500 hover:text-teal-600 active:text-teal-700 font-bold transition duration-100"
+							>More
+						</a>
+					</div>
+				</div>
+				<!-- feature - end -->
+
+				<!-- feature - start -->
+				<div class="flex gap-4 md:gap-6">
+					<div
+						class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-teal-500 text-white rounded-lg md:rounded-xl shadow-lg"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-6 h-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+							></path>
+						</svg>
+					</div>
+
+					<div>
+						<h3 class="text-lg md:text-xl font-semibold mb-2">Cloud</h3>
+						<p class="text-gray-500 mb-2">
+							Filler text is dummy text which has no meaning however looks very
+							similar to real text.
+						</p>
+						<a
+							href="#"
+							class="text-teal-500 hover:text-teal-600 active:text-teal-700 font-bold transition duration-100"
+							>More
+						</a>
+					</div>
+				</div>
+				<!-- feature - end -->
+
+				<!-- feature - start -->
+				<div class="flex gap-4 md:gap-6">
+					<div
+						class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-teal-500 text-white rounded-lg md:rounded-xl shadow-lg"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-6 h-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+						</svg>
+					</div>
+
+					<div>
+						<h3 class="text-lg md:text-xl font-semibold mb-2">Speed</h3>
+						<p class="text-gray-500 mb-2">
+							Filler text is dummy text which has no meaning however looks very
+							similar to real text.
+						</p>
+						<a
+							href="#"
+							class="text-teal-500 hover:text-teal-600 active:text-teal-700 font-bold transition duration-100"
+							>More
+						</a>
+					</div>
+				</div>
+				<!-- feature - end -->
+
+				<!-- feature - start -->
+				<div class="flex gap-4 md:gap-6">
+					<div
+						class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-teal-500 text-white rounded-lg md:rounded-xl shadow-lg"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-6 h-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+							></path>
+						</svg>
+					</div>
+
+					<div>
+						<h3 class="text-lg md:text-xl font-semibold mb-2">Support</h3>
+						<p class="text-gray-500 mb-2">
+							Filler text is dummy text which has no meaning however looks very
+							similar to real text.
+						</p>
+						<a
+							href="#"
+							class="text-teal-500 hover:text-teal-600 active:text-teal-700 font-bold transition duration-100"
+							>More
+						</a>
+					</div>
+				</div>
+				<!-- feature - end -->
+
+				<!-- feature - start -->
+				<div class="flex gap-4 md:gap-6">
+					<div
+						class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-teal-500 text-white rounded-lg md:rounded-xl shadow-lg"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-6 h-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+							></path>
+						</svg>
+					</div>
+
+					<div>
+						<h3 class="text-lg md:text-xl font-semibold mb-2">Dark Mode</h3>
+						<p class="text-gray-500 mb-2">
+							Filler text is dummy text which has no meaning however looks very
+							similar to real text.
+						</p>
+						<a
+							href="#"
+							class="text-teal-500 hover:text-teal-600 active:text-teal-700 font-bold transition duration-100"
+							>More
+						</a>
+					</div>
+				</div>
+				<!-- feature - end -->
+			</div>
+		</div>
+	</div>
+	<!-- Service More end   -->
+
+	<!-- Services End -->
+
+	<!-- Testimonials Start  -->
+
+	<section
+		class="bg-gradient-to-br from-cyan-100 to-sky-400/30 py-20 sm:py-32"
+		id="testimonials"
+		aria-label="What our customers are saying"
+	>
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-2xl md:text-center">
+				<h2
+					class="text-sky-900 text-2xl lg:text-4xl font-bold text-center mb-4 md:mb-6"
+				>
+					Loved by businesses worldwide.
+				</h2>
+				<p
+					class="mt-4 md:text-lg text-center mx-auto tracking-tight text-sky-800"
+				>
+					Our software is so simple that people can’t help but fall in love with
+					it. Simplicity is easy when you just skip tons of mission-critical
+					features.
+				</p>
+			</div>
+			<ul
+				role="list"
+				class="mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
+			>
+				<li>
+					<ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+						<li>
+							<figure
+								class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"
+							>
+								<svg
+									aria-hidden="true"
+									width="105"
+									height="78"
+									class="absolute top-6 left-6 fill-cyan-600/5"
+								>
+									<path
+										d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+									>
+									</path>
+								</svg>
+								<blockquote class="relative">
+									<p class="text-lg tracking-tight text-zinc-900">
+										TaxPal is so easy to use I can’t help but wonder if it’s
+										really doing the things the government expects me to do.
+									</p>
+								</blockquote>
+								<figcaption
+									class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6"
+								>
+									<div>
+										<div class="font-display text-base text-zinc-900">
+											Sheryl Berge
+										</div>
+										<div class="mt-1 text-sm text-zinc-500">
+											CEO at Lynch LLC
+										</div>
+									</div>
+									<div class="overflow-hidden rounded-full bg-cyan-50">
+										<img
+											alt=""
+											src="https://i.pravatar.cc/400?img=14"
+											width="56"
+											height="56"
+											decoding="async"
+											data-nimg="future"
+											class="h-14 w-14 object-cover"
+											loading="lazy"
+										/>
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure
+								class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"
+							>
+								<svg
+									aria-hidden="true"
+									width="105"
+									height="78"
+									class="absolute top-6 left-6 fill-cyan-600/5"
+								>
+									<path
+										d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+									>
+									</path>
+								</svg>
+								<blockquote class="relative">
+									<p class="text-lg tracking-tight text-zinc-900">
+										I’m trying to get a hold of someone in support, I’m in a lot
+										of trouble right now and they are saying it has something to
+										do with my books. Please get back to me right away.
+									</p>
+								</blockquote>
+								<figcaption
+									class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6"
+								>
+									<div>
+										<div class="font-display text-base text-zinc-900">
+											Amy Hahn
+										</div>
+										<div class="mt-1 text-sm text-zinc-500">
+											Director at Velocity Industries
+										</div>
+									</div>
+									<div class="overflow-hidden rounded-full bg-cyan-50">
+										<img
+											alt=""
+											src="https://i.pravatar.cc/400?img=36"
+											width="56"
+											height="56"
+											decoding="async"
+											data-nimg="future"
+											class="h-14 w-14 object-cover"
+											loading="lazy"
+										/>
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+						<li>
+							<figure
+								class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"
+							>
+								<svg
+									aria-hidden="true"
+									width="105"
+									height="78"
+									class="absolute top-6 left-6 fill-cyan-600/5"
+								>
+									<path
+										d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+									>
+									</path>
+								</svg>
+								<blockquote class="relative">
+									<p class="text-lg tracking-tight text-zinc-900">
+										The best part about TaxPal is every time I pay my employees,
+										my bank balance doesn’t go down like it used to. Looking
+										forward to spending this extra cash when I figure out why my
+										card is being declined.
+									</p>
+								</blockquote>
+								<figcaption
+									class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6"
+								>
+									<div>
+										<div class="font-display text-base text-zinc-900">
+											Leland Kiehn
+										</div>
+										<div class="mt-1 text-sm text-zinc-500">
+											Founder of Kiehn and Sons
+										</div>
+									</div>
+									<div class="overflow-hidden rounded-full bg-cyan-50">
+										<img
+											alt=""
+											src="https://i.pravatar.cc/400?img=60"
+											width="56"
+											height="56"
+											decoding="async"
+											data-nimg="future"
+											class="h-14 w-14 object-cover"
+											loading="lazy"
+										/>
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure
+								class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"
+							>
+								<svg
+									aria-hidden="true"
+									width="105"
+									height="78"
+									class="absolute top-6 left-6 fill-cyan-600/5"
+								>
+									<path
+										d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+									>
+									</path>
+								</svg>
+								<blockquote class="relative">
+									<p class="text-lg tracking-tight text-zinc-900">
+										There are so many things I had to do with my old software
+										that I just don’t do at all with TaxPal. Suspicious but I
+										can’t say I don’t love it.
+									</p>
+								</blockquote>
+								<figcaption
+									class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6"
+								>
+									<div>
+										<div class="font-display text-base text-zinc-900">
+											Erin Powlowski
+										</div>
+										<div class="mt-1 text-sm text-zinc-500">
+											COO at Armstrong Inc
+										</div>
+									</div>
+									<div class="overflow-hidden rounded-full bg-cyan-50">
+										<img
+											alt=""
+											src="https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk"
+											width="56"
+											height="56"
+											decoding="async"
+											data-nimg="future"
+											class="h-14 w-14 object-cover"
+											loading="lazy"
+										/>
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+						<li>
+							<figure
+								class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"
+							>
+								<svg
+									aria-hidden="true"
+									width="105"
+									height="78"
+									class="absolute top-6 left-6 fill-cyan-600/5"
+								>
+									<path
+										d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+									>
+									</path>
+								</svg>
+								<blockquote class="relative">
+									<p class="text-lg tracking-tight text-zinc-900">
+										I used to have to remit tax to the EU and with TaxPal I
+										somehow don’t have to do that anymore. Nervous to travel
+										there now though.
+									</p>
+								</blockquote>
+								<figcaption
+									class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6"
+								>
+									<div>
+										<div class="font-display text-base text-zinc-900">
+											Peter Renolds
+										</div>
+										<div class="mt-1 text-sm text-zinc-500">
+											Founder of West Inc
+										</div>
+									</div>
+									<div class="overflow-hidden rounded-full bg-cyan-50">
+										<img
+											alt=""
+											src="https://i.pravatar.cc/400?img=26"
+											width="56"
+											height="56"
+											decoding="async"
+											data-nimg="future"
+											class="h-14 w-14 object-cover"
+											loading="lazy"
+										/>
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure
+								class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"
+							>
+								<svg
+									aria-hidden="true"
+									width="105"
+									height="78"
+									class="absolute top-6 left-6 fill-cyan-600/5"
+								>
+									<path
+										d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+									>
+									</path>
+								</svg>
+								<blockquote class="relative">
+									<p class="text-lg tracking-tight text-zinc-900">
+										This is the fourth email I’ve sent to your support team. I
+										am literally being held in jail for tax fraud. Please answer
+										your damn emails, this is important.
+									</p>
+								</blockquote>
+								<figcaption
+									class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6"
+								>
+									<div>
+										<div class="font-display text-base text-zinc-900">
+											Amy Hahn
+										</div>
+										<div class="mt-1 text-sm text-zinc-500">
+											Director at Velocity Industries
+										</div>
+									</div>
+									<div class="overflow-hidden rounded-full bg-cyan-50">
+										<img
+											alt=""
+											src="https://i.pravatar.cc/150?img=1"
+											width="56"
+											height="56"
+											decoding="async"
+											data-nimg="future"
+											class="h-14 w-14 object-cover"
+											loading="lazy"
+										/>
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Testimonials Start  -->
+
+	<!-- Call To Action Start-->
+
+	<div class="py-16 bg-white">
+		<div
+			class="container m-auto px-6 space-y-8 text-gray-500 md:px-12 lg:px-20"
+		>
+			<div class="flex items-center justify-center -space-x-2">
+				<img
+					loading="lazy"
+					width="220"
+					height="220"
+					src="https://tailus.io/sources/blocks/app/preview/images/avatars/second_user.webp"
+					alt="member photo"
+					class="w-8 h-8 object-cover rounded-full"
+				/>
+				<img
+					loading="lazy"
+					width="220"
+					height="220"
+					src="https://tailus.io/sources/blocks/app/preview/images/avatars/first_user.webp"
+					alt="member photo"
+					class="w-12 h-12 object-cover rounded-full"
+				/>
+				<img
+					loading="lazy"
+					width="220"
+					height="220"
+					src="https://tailus.io/sources/blocks/app/preview/images/avatars/third_user.webp"
+					alt="member photo"
+					class="z-10 w-16 h-16 object-cover rounded-full"
+				/>
+				<img
+					loading="lazy"
+					width="220"
+					height="220"
+					src="https://tailus.io/sources/blocks/app/preview/images/avatars/first_user.webp"
+					alt="member photo"
+					class="relative w-12 h-12 object-cover rounded-full"
+				/>
+				<img
+					loading="lazy"
+					width="220"
+					height="220"
+					src="https://tailus.io/sources/blocks/app/preview/images/avatars/second_user.webp"
+					alt="member photo"
+					class="w-8 h-8 object-cover rounded-full"
+				/>
+			</div>
+			<div class="m-auto space-y-6 md:w-8/12 lg:w-7/12">
+				<h1 class="text-4xl text-gray-700 font-bold text-center md:text-5xl">
+					Get Started now
+				</h1>
+				<p class="text-xl text-center">
+					Be part of millions people around the world using tailus in modern
+					User Interfaces.
+				</p>
+				<div class="flex flex-wrap justify-center gap-6">
+					<a
+						href="#"
+						title="More"
+						class="block w-full py-3 px-6 text-center rounded-xl bg-cyan-100 transition hover:bg-cyan-200 active:bg-cyan-300 focus:bg-cyan-200 sm:w-max"
+					>
+						<span class="text-cyan-700 font-semibold"> More about</span>
+					</a>
+					<a
+						href="#"
+						title="Get started"
+						class="block w-full py-3 px-6 text-center rounded-xl bg-cyan-600 transition hover:bg-cyan-700 active:bg-cyan-800 focus:bg-sky-600 sm:w-max"
+					>
+						<span class="text-white font-semibold"> Get started</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action End-->
+	<!-- Pricing start  -->
+
+	<div class="bg-gradient-to-br from-sky-400/80 to-cyan-500">
+		<div class="container m-auto px-6 py-20 md:px-12 lg:px-20">
+			<div class="m-auto text-center lg:w-7/12">
+				<h2 class="text-2xl text-white font-bold md:text-4xl">
+					A Tailus Blocks subscription gives you access to our components and
+					more.
+				</h2>
+			</div>
+			<div
+				class="mt-12 grid items-center gap-6 md:grid-cols-2 lg:flex lg:space-x-8"
+			>
+				<div class="relative md:col-span-1 group lg:w-[32%]">
+					<div
+						aria-hidden="true"
+						class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
+					>
+					</div>
+					<div class="relative p-6 space-y-6">
+						<h3 class="text-3xl text-gray-700 font-semibold text-center">
+							Monthly
+						</h3>
+						<div class="relative flex justify-around">
+							<div class="flex">
+								<span class="-ml-6 mt-2 text-3xl text-cyan-500 font-bold"
+									>$
+								</span>
+								<span class="text-8xl text-gray-800 font-bold leading-0"
+									>19
+								</span>
+							</div>
+							<span
+								class="absolute right-2 bottom-2 text-xl text-cyan-500 font-bold"
+								>/ Month
+							</span>
+						</div>
+						<ul role="list" class="w-max space-y-4 pb-6 m-auto text-gray-600">
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>First premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>Second premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>Third advantage</span>
+							</li>
+						</ul>
+						<button
+							type="submit"
+							title="Submit"
+							class="block w-full py-3 px-6 text-center rounded-xl transition bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 focus:bg-sky-500"
+						>
+							<span class="text-white font-semibold"> Start plan</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="relative row-start-1 group md:col-span-2 lg:w-[36%]">
+					<div
+						aria-hidden="true"
+						class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
+					>
+					</div>
+					<div class="relative p-6 space-y-6">
+						<h3 class="text-3xl text-gray-700 font-semibold text-center">
+							Annual
+						</h3>
+						<div class="overflow-hidden">
+							<div class="-mr-20 flex items-end justify-center">
+								<div class="flex">
+									<span class="-ml-6 mt-2 text-3xl text-cyan-500 font-bold"
+										>$
+									</span>
+									<span class="text-8xl text-gray-800 font-bold leading-0"
+										>15
+									</span>
+								</div>
+								<div class="mb-2">
+									<span class="block text-xl font-bold">.56</span>
+									<span class="block text-xl text-cyan-500 font-bold"
+										>/ Month
+									</span>
+								</div>
+							</div>
+							<div class="text-center text-2xl font-medium">
+								<span class="text-gray-400 line-through">$234</span>
+								<span class="text-gray-700 font-semibold">$190</span>
+							</div>
+							<span class="block uppercase text-xs text-cyan-500 text-center"
+								>BILLED YEARLY
+							</span>
+							<span
+								class="block w-max mt-4 m-auto px-4 py-1 rounded-full bg-gradient-to-r from-yellow-300 to-pink-300 text-sm font-medium text-yellow-900"
+								>1 Discount applied
+							</span>
+						</div>
+						<ul role="list" class="w-max space-y-4 pb-6 m-auto text-gray-600">
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>First premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>Second premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>Third advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>Fourth organizations advantage</span>
+							</li>
+						</ul>
+						<button
+							type="submit"
+							title="Submit"
+							class="block w-full py-3 px-6 text-center rounded-xl transition bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 focus:bg-sky-500"
+						>
+							<span class="text-white font-semibold"> Start plan</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="relative md:col-span-1 group lg:w-[32%]">
+					<div
+						aria-hidden="true"
+						class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
+					>
+					</div>
+					<div class="relative p-6 space-y-6">
+						<h3 class="text-3xl text-gray-700 font-semibold text-center">
+							Free
+						</h3>
+						<div class="relative flex justify-around">
+							<div class="flex">
+								<span class="-ml-2 mt-2 text-3xl text-cyan-500 font-bold"
+									>$
+								</span>
+								<span class="text-8xl text-gray-800 font-bold leading-0"
+									>0
+								</span>
+							</div>
+						</div>
+						<ul role="list" class="w-max space-y-4 pb-6 m-auto text-gray-600">
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>First premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>Second premium advantage</span>
+							</li>
+							<li class="space-x-2">
+								<span class="text-cyan-500 font-semibold">&check;</span>
+								<span>Third advantage</span>
+							</li>
+						</ul>
+						<button
+							type="submit"
+							title="Submit"
+							class="block w-full py-3 px-6 text-center rounded-xl bg-cyan-100 transition hover:bg-cyan-200 active:bg-cyan-300 focus:bg-cyan-200"
+						>
+							<span class="text-cyan-700 font-semibold">
+								Create free account
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Pricing End -->
+	<!-- About Us -->
+
+	<!-- FAQ Start  -->
+	<div class="bg-white py-6 sm:py-8 lg:py-12">
+		<div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+			<!-- text - start -->
+			<div class="mb-10 md:mb-16">
+				<h2
+					class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
+				>
+					Frequently asked questions
+				</h2>
+
+				<p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
+					This is a section of some simple filler text, also known as
+					placeholder text. It shares some characteristics of a real written
+					text but is random or otherwise generated.
+				</p>
+			</div>
+			<!-- text - end -->
+
+			<div class="flex flex-col max-w-screen-sm border-t mx-auto">
+				<!-- question - start -->
+				<div class="border-b">
+					<div
+						class="flex justify-between text-black hover:text-cyan-500 active:text-cyan-600 cursor-pointer gap-2 py-4"
+					>
+						<span class="md:text-lg font-semibold transition duration-100"
+							>How does the product work?
+						</span>
+
+						<span class="text-cyan-500">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-6 h-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"></path>
+							</svg>
+						</span>
+					</div>
+
+					<p class="hidden text-gray-500 mb-4">
+						This is a section of some simple filler text, also known as
+						placeholder text. It shares some characteristics of a real written
+						text but is random or otherwise generated. It may be used to display
+						a sample of fonts or generate text for testing.
+					</p>
+				</div>
+				<!-- question - end -->
+
+				<!-- question - start -->
+				<div class="border-b">
+					<div
+						class="flex justify-between text-black hover:text-cyan-500 active:text-indigo-600 cursor-pointer gap-2 py-4"
+					>
+						<span class="md:text-lg font-semibold transition duration-100"
+							>What are the features?
+						</span>
+
+						<span class="text-indigo-500">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-6 h-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"></path>
+							</svg>
+						</span>
+					</div>
+
+					<p class="hidden text-gray-500 mb-4">
+						This is a section of some simple filler text, also known as
+						placeholder text. It shares some characteristics of a real written
+						text but is random or otherwise generated. It may be used to display
+						a sample of fonts or generate text for testing.
+					</p>
+				</div>
+				<!-- question - end -->
+
+				<!-- question - start -->
+				<div class="border-b">
+					<div
+						class="flex justify-between text-black hover:text-indigo-500 active:text-indigo-600 cursor-pointer gap-2 py-4"
+					>
+						<span class="md:text-lg font-semibold transition duration-100"
+							>What about integrations?
+						</span>
+
+						<span class="text-indigo-500">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-6 h-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"></path>
+							</svg>
+						</span>
+					</div>
+
+					<p class="hidden text-gray-500 mb-4">
+						This is a section of some simple filler text, also known as
+						placeholder text. It shares some characteristics of a real written
+						text but is random or otherwise generated. It may be used to display
+						a sample of fonts or generate text for testing.
+					</p>
+				</div>
+				<!-- question - end -->
+
+				<!-- question - start -->
+				<div class="border-b">
+					<div
+						class="flex justify-between text-black hover:text-indigo-500 active:text-indigo-600 cursor-pointer gap-2 py-4"
+					>
+						<span class="md:text-lg font-semibold transition duration-100"
+							>Is support available?
+						</span>
+
+						<span class="text-indigo-500 rotate-180">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-6 h-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"></path>
+							</svg>
+						</span>
+					</div>
+
+					<p class="text-gray-500 mb-4">
+						This is a section of some simple filler text, also known as
+						placeholder text. It shares some characteristics of a real written
+						text but is random or otherwise generated. It may be used to display
+						a sample of fonts or generate text for testing.
+					</p>
+				</div>
+				<!-- question - end -->
+			</div>
+		</div>
+	</div>
+	<!-- FAQ End  -->
+	<!-- Contact Us Start --
+    <!-- Contact Us end  -->
+	<!-- Footer Start  -->
+	<footer class="bg-white my-6">
+		<div class="bg-cyan-500 py-6 mx-20 rounded-md">
+			<div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+				<div
+					class="flex flex-col md:flex-row justify-between items-center gap-2"
+				>
+					<div class="text-center md:text-left mb-3 md:mb-0">
+						<span class="text-gray-100 font-bold uppercase tracking-widest"
+							>Newsletter
+						</span>
+						<p class="text-indigo-200">Subscribe to our newsletter</p>
+					</div>
+
+					<form class="w-full md:max-w-md flex gap-2">
+						<input
+							placeholder="Email"
+							class="w-full flex-1 bg-cyan-500 text-white placeholder-cyan-100 border border-white focus:ring ring-cyan-300 rounded-md outline-none transition duration-100 px-3 py-2"
+						/>
+
+						<button
+							class="inline-block bg-white hover:bg-gray-100 focus-visible:ring ring-cyan-300 text-cyan-500 active:text-cyan-600 text-sm md:text-base font-semibold text-center rounded-md outline-none transition duration-100 px-8 py-2"
+							>Send
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="pt-12 lg:pt-16 px-16">
+			<div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+				<div
+					class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 mb-16"
+				>
+					<div class="col-span-full lg:col-span-2">
+						<!-- logo - start -->
+						<div class="lg:-mt-2 mb-4">
+							<a href="#" aria-label="logo" class="flex space-x-2 items-center">
+								<div aria-hidden="true" class="flex space-x-1">
+									<div class="h-4 w-4 rounded-full bg-gray-900"></div>
+									<div class="h-6 w-2 bg-cyan-500"></div>
+								</div>
+								<span class="text-2xl font-bold text-gray-900">Arceelus</span>
+							</a>
+
+							<!-- <a href="/" class="inline-flex items-center text-black-800 text-xl md:text-2xl font-bold gap-2" aria-label="logo">
+              <svg width="95" height="94" viewBox="0 0 95 94" class="w-5 h-auto text-indigo-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+              </svg>
+              Flowrift
+            </a> -->
+						</div>
+						<!-- logo - end -->
+
+						<p class="text-gray-500 sm:pr-8 mb-6">
+							Filler text is dummy text which has no meaning however looks very
+							similar to real text
+						</p>
+
+						<!-- social - start -->
+						<div class="flex gap-4">
+							<a
+								href="#"
+								target="_blank"
+								class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+							>
+								<svg
+									class="w-5 h-5"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+									></path>
+								</svg>
+							</a>
+
+							<a
+								href="#"
+								target="_blank"
+								class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+							>
+								<svg
+									class="w-5 h-5"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+									></path>
+								</svg>
+							</a>
+
+							<a
+								href="#"
+								target="_blank"
+								class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+							>
+								<svg
+									class="w-5 h-5"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+									></path>
+								</svg>
+							</a>
+
+							<a
+								href="#"
+								target="_blank"
+								class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+							>
+								<svg
+									class="w-5 h-5"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+									></path>
+								</svg>
+							</a>
+						</div>
+						<!-- social - end -->
+					</div>
+
+					<!-- nav - start -->
+					<div>
+						<div class="text-gray-800 font-bold tracking-widest uppercase mb-4">
+							Products
+						</div>
+
+						<nav class="flex flex-col gap-4">
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Overview
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Solutions
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Pricing
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Customers
+								</a>
+							</div>
+						</nav>
+					</div>
+					<!-- nav - end -->
+
+					<!-- nav - start -->
+					<div>
+						<div class="text-gray-800 font-bold tracking-widest uppercase mb-4">
+							Company
+						</div>
+
+						<nav class="flex flex-col gap-4">
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>About
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Investor Relations
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Jobs
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Press
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Blog
+								</a>
+							</div>
+						</nav>
+					</div>
+					<!-- nav - end -->
+
+					<!-- nav - start -->
+					<div>
+						<div class="text-gray-800 font-bold tracking-widest uppercase mb-4">
+							Support
+						</div>
+
+						<nav class="flex flex-col gap-4">
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Contact
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Documentation
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Chat
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>FAQ
+								</a>
+							</div>
+						</nav>
+					</div>
+					<!-- nav - end -->
+
+					<!-- nav - start -->
+					<div>
+						<div class="text-gray-800 font-bold tracking-widest uppercase mb-4">
+							Legal
+						</div>
+
+						<nav class="flex flex-col gap-4">
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Terms of Service
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Privacy Policy
+								</a>
+							</div>
+
+							<div>
+								<a
+									href="#"
+									class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+									>Cookie settings
+								</a>
+							</div>
+						</nav>
+					</div>
+					<!-- nav - end -->
+				</div>
+
+				<div class="text-gray-400 text-sm text-center border-t py-8">
+					© 2021 - Present Flowrift. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End  -->
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var scrollStart = 0;
+		var navbarElement = document.querySelector("nav");
+		const offset = navbarElement?.getBoundingClientRect();
+
+		document.onscroll = function (e: any) {
+			// if (navbarElement.className.includes('shadow-sm')) return;
+			if (!e.target?.scrollingElement || !offset) return;
+
+			scrollStart = e.target.scrollingElement.scrollTop;
+			if (scrollStart > offset.top) {
+				navbarElement?.classList.add("shadow");
+			} else {
+				navbarElement?.classList.remove("shadow");
+			}
+		};
+	});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+></script>
