@@ -1,3 +1,7 @@
+---
+import { Image } from "@astrojs/image/components";
+---
+
 <div class="relative w-full bg-white">
 	<!-- Header Start -->
 	<!-- navBar Start -->
@@ -133,13 +137,14 @@
 							class="p-4 border border-gray-200 rounded-md hover:border-cyan-400 hover:shadow-lg"
 						>
 							<div class="flex justify-center space-x-4">
-								<img
+								<Image
 									class="w-6"
 									src="https://tailus.io/sources/blocks/tech-startup/preview/images/slack.png"
 									alt="slack logo"
+									width={128}
 									loading="lazy"
-									width="128"
-									height="128"
+									format="avif"
+									height={128}
 								/>
 								<span class="hidden font-medium md:block">Add to Slack</span>
 							</div>
@@ -150,13 +155,14 @@
 							class="p-4 border border-gray-200 rounded-md hover:border-green-400 hover:shadow-lg"
 						>
 							<div class="flex justify-center space-x-4">
-								<img
+								<Image
 									class="w-6"
 									src="https://tailus.io/sources/blocks/tech-startup/preview/images/chat.png"
 									alt="chat logo"
+									width={128}
 									loading="lazy"
-									width="128"
-									height="128"
+									format="avif"
+									height={128}
 								/>
 								<span class="hidden font-medium md:block"
 									>Add to Google Chat
@@ -169,13 +175,14 @@
 							class="p-4 border border-gray-200 rounded-md hover:border-blue-400 hover:shadow-lg"
 						>
 							<div class="flex justify-center space-x-4">
-								<img
+								<Image
 									class="w-6"
 									src="https://tailus.io/sources/blocks/tech-startup/preview/images/zoom.png"
 									alt="chat logo"
+									width={128}
 									loading="lazy"
-									width="128"
-									height="128"
+									format="avif"
+									height={128}
 								/>
 								<span class="hidden font-medium md:block">Add to Zoom</span>
 							</div>
@@ -218,73 +225,80 @@
 					class="mt-8 flex justify-center flex-wrap items-center gap-4 md:gap-6 lg:gap-8"
 				>
 					<div class="flex items-center">
-						<img
+						<Image
 							class="w-36"
 							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/microsoft.png"
 							alt="client logo"
 							loading="lazy"
-							width="584"
-							height="122"
+							format="avif"
+							width={584}
+							height={122}
 						/>
 					</div>
 					<div class="flex items-center">
-						<img
+						<Image
 							class="w-28"
 							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/myob.png"
 							alt="client logo"
 							loading="lazy"
-							width="400"
-							height="219"
+							format="avif"
+							width={500}
+							height={200}
 						/>
 					</div>
 					<div class="flex items-center">
-						<img
+						<Image
 							class="w-28"
 							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/grabyo.png"
 							alt="client logo"
 							loading="lazy"
-							width="400"
-							height="219"
+							format="avif"
+							width={590}
+							height={200}
 						/>
 					</div>
 					<div class="flex items-center">
-						<img
+						<Image
 							class="w-32"
 							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/lifegroups.png"
 							alt="client logo"
 							loading="lazy"
-							width="400"
-							height="219"
+							format="avif"
+							width={560}
+							height={200}
 						/>
 					</div>
 					<div class="flex items-center">
-						<img
+						<Image
 							class="w-24"
 							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/lilly.png"
 							alt="client logo"
 							loading="lazy"
-							width="400"
-							height="219"
+							format="avif"
+							width={400}
+							height={219}
 						/>
 					</div>
 					<div class="flex items-center">
-						<img
+						<Image
 							class="w-28"
 							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/grabyo.png"
 							alt="client logo"
 							loading="lazy"
-							width="400"
-							height="219"
+							format="avif"
+							width={560}
+							height={200}
 						/>
 					</div>
 					<div class="flex items-center">
-						<img
+						<Image
 							class="w-32"
 							src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/lifegroups.png"
 							alt="client logo"
 							loading="lazy"
-							width="400"
-							height="219"
+							format="avif"
+							width={590}
+							height={200}
 						/>
 					</div>
 				</div>
@@ -399,7 +413,7 @@
             </a>
           </div>
           <div class="md:5/12 lg:w-6/12">
-            <img src="https://tailus.io/sources/blocks/right-image/preview/images/boost.png" alt="image" loading="lazy"
+            <Image src="https://tailus.io/sources/blocks/right-image/preview/images/boost.png" alt="image" loading="lazy"
               width="" height="">
           </div>
         </div>
